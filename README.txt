@@ -121,7 +121,7 @@ repo_provider=github
 repo_url=git@github.com:example/acme-plugin.git
 deploy_ref=refs/tags/v1.2.0
 auth_method=ssh
-webhook_secret=example_webhook_secret_replace_me
+webhook_secret=REPLACE_WITH_YOUR_WEBHOOK_SECRET
 
 Token-based pseudo configuration:
 
@@ -129,7 +129,7 @@ repo_provider=gitlab
 repo_url=https://gitlab.example.com/team/acme-theme.git
 deploy_ref=main
 auth_method=token
-access_token=example_git_access_token_replace_me
+access_token=REPLACE_WITH_YOUR_ACCESS_TOKEN
 
 CONFIGURATION EXAMPLES
 
