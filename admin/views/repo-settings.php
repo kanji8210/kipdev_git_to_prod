@@ -2,7 +2,7 @@
     <h1>Repository Connections</h1>
     
     <form method="post" action="">
-        <?php wp_nonce_field('wpgd_add_repo'); ?>
+        <?php wp_nonce_field('kipdev_add_repo'); ?>
         <table class="form-table">
             <tr>
                 <th scope="row">Repository Name</th>
@@ -62,7 +62,7 @@
     
     <h2>Connected Repositories</h2>
     <?php
-    $repos = (new WPGD_Repo_Manager())->get_repositories();
+    $repos = (new KIPDEV_Repo_Manager())->get_repositories();
     if ($repos) {
         echo '<table class="wp-list-table widefat fixed striped">';
         echo '<thead><tr><th>Name</th><th>Type</th><th>Target</th><th>Branch</th><th>Actions</th></tr></thead><tbody>';

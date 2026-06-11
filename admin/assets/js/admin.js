@@ -8,12 +8,12 @@ jQuery(document).ready(function($) {
             showDeployingOverlay();
             
             $.ajax({
-                url: wpgd_ajax.ajax_url,
+                url: kipdev_ajax.ajax_url,
                 type: 'POST',
                 data: {
-                    action: 'wpgd_deploy_now',
+                    action: 'kipdev_deploy_now',
                     repo_id: repoId,
-                    nonce: wpgd_ajax.nonce
+                    nonce: kipdev_ajax.nonce
                 },
                 success: function(response) {
                     hideDeployingOverlay();
@@ -43,13 +43,13 @@ jQuery(document).ready(function($) {
                 showDeployingOverlay();
                 
                 $.ajax({
-                    url: wpgd_ajax.ajax_url,
+                    url: kipdev_ajax.ajax_url,
                     type: 'POST',
                     data: {
-                        action: 'wpgd_rollback',
+                        action: 'kipdev_rollback',
                         repo_id: repoId,
                         version: version,
-                        nonce: wpgd_ajax.nonce
+                        nonce: kipdev_ajax.nonce
                     },
                     success: function(response) {
                         hideDeployingOverlay();
@@ -81,23 +81,23 @@ jQuery(document).ready(function($) {
     });
     
     function showDeployingOverlay() {
-        $('body').append('<div id="wpgd-deploying-overlay"><div class="wpgd-loader"><div class="wpgd-spinner"></div><p>Deploying... Please wait</p></div></div>');
+        $('body').append('<div id="kipdev-deploying-overlay"><div class="kipdev-loader"><div class="kipdev-spinner"></div><p>Deploying... Please wait</p></div></div>');
     }
     
     function hideDeployingOverlay() {
-        $('#wpgd-deploying-overlay').remove();
+        $('#kipdev-deploying-overlay').remove();
     }
 });
 
 // AJAX handlers for deployment
 jQuery(document).ready(function($) {
     $.ajax({
-        url: wpgd_ajax.ajax_url,
+        url: kipdev_ajax.ajax_url,
         type: 'POST',
         data: {
-            action: 'wpgd_deploy_now',
+            action: 'kipdev_deploy_now',
             repo_id: repoId,
-            nonce: wpgd_ajax.nonce
+            nonce: kipdev_ajax.nonce
         }
     });
 });

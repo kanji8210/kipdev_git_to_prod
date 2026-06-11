@@ -1,11 +1,11 @@
-.wpgd-stats-grid {
+.kipdev-stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin: 20px 0;
 }
 
-.wpgd-stat-card {
+.kipdev-stat-card {
     background: #fff;
     border: 1px solid #ccd0d4;
     border-radius: 4px;
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.wpgd-stat-card h3 {
+.kipdev-stat-card h3 {
     margin: 0 0 10px 0;
     color: #23282d;
 }
@@ -44,7 +44,7 @@
     font-weight: bold;
 }
 
-.wpgd-recent-deployments {
+.kipdev-recent-deployments {
     background: #fff;
     border: 1px solid #ccd0d4;
     border-radius: 4px;
@@ -56,7 +56,7 @@
     margin: 0 5px !important;
 }
 
-#wpgd-deploying-overlay {
+#kipdev-deploying-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -69,23 +69,23 @@
     justify-content: center;
 }
 
-.wpgd-loader {
+.kipdev-loader {
     background: white;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
 }
 
-.wpgd-spinner {
+.kipdev-spinner {
     display: inline-block;
     width: 50px;
     height: 50px;
     border: 3px solid rgba(0,115,170,0.3);
     border-radius: 50%;
     border-top-color: #0073aa;
-    animation: wpgd-spin 1s ease-in-out infinite;
+    animation: kipdev-spin 1s ease-in-out infinite;
 }
 
-@keyframes wpgd-spin {
+@keyframes kipdev-spin {
     to { transform: rotate(360deg); }
 }

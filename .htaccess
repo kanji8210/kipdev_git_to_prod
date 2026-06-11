@@ -5,7 +5,7 @@
 </Files>
 
 # Allow main plugin file
-<Files "wp-git-deploy.php">
+<Files "kipdev_git_to_prod.php">
     Order Allow,Deny
     Allow from all
 </Files>

@@ -2,7 +2,7 @@
     <h1>Deployment Logs</h1>
     
     <?php
-    $logs = (new WPGD_Logger())->get_logs(null, 100);
+    $logs = (new KIPDEV_Logger())->get_logs(null, 100);
     if ($logs) {
         echo '<table class="wp-list-table widefat fixed striped">';
         echo '<thead><tr>
