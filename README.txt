@@ -121,7 +121,7 @@ repo_provider=github
 repo_url=git@github.com:example/acme-plugin.git
 deploy_ref=refs/tags/v1.2.0
 auth_method=ssh
-webhook_secret=change-me
+webhook_secret=your-webhook-secret-here
 
 Token-based pseudo configuration:
 
